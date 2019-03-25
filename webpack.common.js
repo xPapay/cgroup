@@ -57,6 +57,10 @@ const config = {
 			{
 				test: /\.(png|jpg|jpeg|gif|svg)$/,
 				use: 'file-loader'
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|svg)$/,
+				use: 'url-loader'
 			}
 		]
     },

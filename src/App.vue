@@ -9,6 +9,7 @@
     import TheFooter from './components/TheFooter.vue';
     import 'normalize.css'
     import './assets/app.sass'
+    import './assets/iconfont.css'
     export default {
         components: {
             TheFooter,
@@ -62,7 +63,7 @@
 
 .text-right
     text-align: right
-    
+
 .text-left
     text-align: left
 
@@ -92,6 +93,8 @@
         flex: 0
 
 .button
+    cursor: pointer
+    border: none
     display: inline-block
     border-radius: 20px
     background: #1e3847

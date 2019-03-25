@@ -7,6 +7,7 @@ import Recharge from './views/Recharge'
 import ManagementTeam from './views/ManagementTeam.vue'
 import WorkingWithUs from './views/WorkingWithUs'
 import OurTech from './views/OurTech.vue';
+import Contact from './views/Contact'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export const createRouter = () => {
                 name: 'our-tech',
                 path: '/our-tech',
                 component: OurTech
+            },
+            {
+                name: 'contact',
+                path: '/contact',
+                component: Contact
             }
         ]
     })
