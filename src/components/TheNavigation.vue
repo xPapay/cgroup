@@ -43,7 +43,7 @@
     text-transform: uppercase
     color: white
     font-size: 0.9rem
-    transition: color .7s
+    transition: color .3s
 
     &:hover
         color: gray

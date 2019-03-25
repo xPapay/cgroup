@@ -4,6 +4,7 @@ import HomePage from './views/HomePage.vue'
 import OurStory from './views/OurStory.vue'
 import Rapido from './views/Rapido'
 import Recharge from './views/Recharge'
+import ManagementTeam from './views/ManagementTeam.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export const createRouter = () => {
                 name: 'recharge',
                 path: '/recharge',
                 component: Recharge
+            },
+            {
+                name: 'management-team',
+                path: '/management-team',
+                component: ManagementTeam
             }
         ]
     })

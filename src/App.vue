@@ -23,6 +23,8 @@
     padding-top: 40px
     padding-bottom: 40px
 
+.section--dark
+    background: #f6f6f6
 
 .section:nth-child(odd)
     background: #f6f6f6
@@ -57,6 +59,10 @@
 
 .text-center
     text-align: center
+
+.muted-text
+    color: lightgray
+    font-weight: normal
 
 .margin-s
     margin: 0.8rem

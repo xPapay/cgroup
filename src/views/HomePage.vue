@@ -41,32 +41,32 @@
         <section class="section">
             <h2 class="section__headline">Our Brands</h2>
             <div class="row row--narrow">
-                <div class="flex-grid brands-list">
+                <div class="flex-grid">
                     <cta-card
                         :key="1"
-                        subheadline="The future of payments"
-                        :button="{link: '#', label: 'Learn more'}"
-                        class="brands-list__card"
+                        class="brand-card flex-grid__brand-card"
                     >
-                        <template v-slot:image>
-                            <img src="../assets/recharge-logo-01.jpg" alt="Recharge logo">
-                        </template>
-                        <template>
+                        <div class="brand-card__body">
+                            <img class="brand-card__image" src="../assets/recharge-logo-01.jpg" alt="Recharge logo">
+                            <h4 class="brand-card__title">The future of payments</h4>
                             <p>For expats who want to support their loved ones back home and for top-up users on the go, Recharge is the best place for recharging and paying accounts anywhere in the world from a mobile device.</p>
-                        </template>
+                        </div>
+                        <div class="brand-card__footer m-top-l">
+                            <router-link :to="{name: 'recharge'}" class="button">Learn more</router-link>
+                        </div>
                     </cta-card>
                     <cta-card
                         :key="2"
-                        subheadline="Releasing digital value"
-                        :button="{link: '#', label: 'Learn more'}"
-                        class="brands-list__card"
+                        class="brand-card flex-grid__brand-card"
                     >
-                        <template v-slot:image>
-                            <img src="../assets/Rapido_header.jpg" alt="Rapido logo">
-                        </template>
-                        <template>
+                        <div class="brand-card__body">
+                            <img class="brand-card__image" src="../assets/Rapido_header.jpg" alt="Rapido logo">
+                            <h4 class="brand-card__title">Releasing digital value</h4>                            
                             <p>For all top-up users who want to enjoy a continuous service; Rapido is the best and largest online store, with the broadest selection of e-vouchers and the fastest delivery.</p>
-                        </template>
+                        </div>
+                        <div class="brand-card__footer m-top-l">
+                            <router-link :to="{name: 'rapido'}" class="button">Learn more</router-link>
+                        </div>
                     </cta-card>
                 </div>
             </div>
@@ -110,7 +110,16 @@
     max-width: 150px
     margin: 10px
 
-.brands-list__card
+.brand-card
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.brand-card__image
+    max-width: 100%
+
+.flex-grid__brand-card
     flex-basis: 40%
     flex-grow: 1
 </style>

@@ -19,74 +19,34 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="flex-grid features">
-                <cta-card 
-                    :key="1"
-                    headline="Cutting-edge technology"
-                    subheadline="Our mentality for technology is a central driver of our journey"
-                    class="features__card"
-                >
-                    <template v-slot:image>
-                        <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">
-                    </template>
-                    <template>
-                        <p class="features-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
-                    </template>
-                </cta-card>
-                <cta-card 
-                    :key="2"
-                    headline="Cutting-edge technology"
-                    subheadline="Our mentality for technology is a central driver of our journey"
-                    class="features__card"
-                >
-                    <template v-slot:image>
-                        <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">
-                    </template>
-                    <template>
-                        <p class="features-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
-                    </template>
-                </cta-card>
-                <cta-card 
-                    :key="3"
-                    headline="Cutting-edge technology"
-                    subheadline="Our mentality for technology is a central driver of our journey"
-                    class="features__card"
-                >
-                    <template v-slot:image>
-                        <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">
-                    </template>
-                    <template>
-                        <p class="features-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
-                    </template>
-                </cta-card>
-                <cta-card 
-                    :key="4"
-                    headline="Cutting-edge technology"
-                    subheadline="Our mentality for technology is a central driver of our journey"
-                    class="features__card"
-                >
-                    <template v-slot:image>
-                        <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">
-                    </template>
-                    <template>
-                        <p class="features-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
-                    </template>
-                </cta-card>
-                <cta-card 
-                    :key="5"
-                    headline="Cutting-edge technology"
-                    subheadline="Our mentality for technology is a central driver of our journey"
-                    class="features__card"
-                >
-                    <template v-slot:image>
-                        <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">
-                    </template>
-                    <template>
-                        <p class="features-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology.</p>
-                    </template>
-                </cta-card>
-            </div>
+        <section class="section flex-grid">
+            <cta-card
+                :key="1"
+                class="feature-card flex-grid__feature-card"
+            >
+                <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                <h2 class="feature-card__title">Cutting-edge technology</h2>
+                <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
+                <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
+            </cta-card>
+            <cta-card
+                :key="2"
+                class="feature-card flex-grid__feature-card"
+            >
+                <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                <h2 class="feature-card__title">Cutting-edge technology</h2>
+                <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
+                <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
+            </cta-card>
+            <cta-card
+                :key="3"
+                class="feature-card flex-grid__feature-card"
+            >
+                <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                <h2 class="feature-card__title">Cutting-edge technology</h2>
+                <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
+                <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
+            </cta-card>
         </section>
         <section 
             class="section" 
@@ -135,11 +95,24 @@
 </script>
 
 <style scoped lang="sass">
-.features__card
-    flex-basis: 30%
+.feature-card
+    text-align: center
     min-width: 280px
-    margin-top: 30px
+    max-width: 400px
 
-.features-card__text
+.feature-card__title
+    color: #00b9f2
+    font-size: 2rem
+    font-weight: normal
+
+.feature-card__text
     text-align: justify
+
+.feature-card__image
+    max-width: 100%
+
+.flex-grid__feature-card
+    flex-basis: 30%
+    flex-grow: 1
+    margin: 1.5rem 10px
 </style>
