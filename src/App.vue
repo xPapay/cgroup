@@ -49,11 +49,23 @@
 .bigger-font
     font-size: 1.25rem
 
+.higher-lines
+    line-height: 2
+
+.light-font
+    font-weight: lighter
+
 .text-center
     text-align: center
 
+.margin-s
+    margin: 0.8rem
+
 .m-top-l
     margin-top: 2.5rem
+
+.flex
+    display: flex
 
 .flex-grid
     display: flex
@@ -73,7 +85,16 @@
     background: #1e3847
     color: #eee
     padding: 12px 20px
-    transition: background .4s
+    transition: all .4s
+
+    &--light
+        background: white
+        color: #666
+        border: 1px solid white
+
+        &:hover
+            color: #0092bf
+            background: rgba(255, 255, 255, 0.4) !important
 
     &:hover
         background: #0092bf
@@ -84,5 +105,8 @@
     background: #ddd
     opacity: 0.2
     margin: 40px 0
-    // box-shadow: 0 1px 2px 0 #dedede
+
+.color-light
+    color: white
+
 </style>

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from './views/HomePage.vue'
-import OurStory from './views/OurStory.vue';
+import OurStory from './views/OurStory.vue'
+import Rapido from './views/Rapido'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export const createRouter = () => {
                 name: 'our-story',
                 path: '/our-story',
                 component: OurStory
+            },
+            {
+                name: 'rapido',
+                path: '/rapido',
+                component: Rapido
             }
         ]
     })
