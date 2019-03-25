@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HomePage from './views/HomePage.vue'
 import OurStory from './views/OurStory.vue'
 import Rapido from './views/Rapido'
+import Recharge from './views/Recharge'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export const createRouter = () => {
                 name: 'rapido',
                 path: '/rapido',
                 component: Rapido
+            },
+            {
+                name: 'recharge',
+                path: '/recharge',
+                component: Recharge
             }
         ]
     })
