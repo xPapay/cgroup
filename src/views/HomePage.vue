@@ -3,9 +3,8 @@
         <the-header 
             headline="Tomorrow Is Exciting"
             subheadline="A subheadline"
-        >
-            <the-navigation />
-        </the-header>
+            :background="require('../assets/Home_Header_CG-02-1920x1045.jpg')"
+        />
         <section class="section">
             <div class="awards">
                 <div class="awards__headline">Awards</div>
@@ -85,13 +84,11 @@
 
 <script>
     import TheHeader from '../components/TheHeader.vue';
-    import TheNavigation from '../components/TheNavigation.vue';
     import CtaCard from '../components/CtaCard.vue';
 
     export default {
         components: {
             TheHeader,
-            TheNavigation,
             CtaCard
         }
     }

@@ -1,5 +1,6 @@
 <template>
     <div class="page">
+        <the-navigation/>
         <router-view></router-view>
         <the-footer/>
     </div>
@@ -7,12 +8,14 @@
 
 <script>
     import TheFooter from './components/TheFooter.vue';
+    import TheNavigation from './components/TheNavigation'
     import 'normalize.css'
     import './assets/app.sass'
     import './assets/iconfont.css'
     export default {
         components: {
             TheFooter,
+            TheNavigation
         }
     }
 </script>
@@ -126,4 +129,13 @@
 
 [v-cloak]
     display: none
+
+.navigation
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+
+.lightbox
+    z-index: 999 !important
 </style>
