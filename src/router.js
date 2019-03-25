@@ -12,6 +12,10 @@ export const createRouter = () => {
                 name: 'home',
                 path: '/',
                 component: HomePage
+            },
+            {
+                name: 'our-story',
+                path: '/our-story',
             }
         ]
     })

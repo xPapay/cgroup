@@ -14,7 +14,7 @@
                     <img src="../assets/Deloitte-logo.jpg" alt="FDGazellen logo">
                 </div>
             </div>
-            <div class="section__separator"></div>
+            <div class="separator"></div>
             <h2 class="section__headline">We develop the latest technology for exchanging digital value, and bring it to consumers via market leading international brands</h2>
             <div class="row row--narrow">
                 <div class="col">
@@ -25,15 +25,17 @@
                     <p class="bigger-font">Our brands are active in more than 130 countries, processing millions of online transactions to connect the services of our partners with consumers worldwide.</p>
                 </div>
             </div>
-            <div class="section__separator"></div>
+            <div class="separator"></div>
             <h2 class="section__headline">Our Partners</h2>
-            <p>Our international business partners trust us to deliver e-commerce best practice and innovative technology to obtain hyper-efficient online distribution worldwide. Our promise to them includes data-driven marketing, the highest levels of order handling, safe payment, fastest delivery, and excellent customer support to ensure their customer’s satisfaction.</p>
+            <p class="text-center">Our international business partners trust us to deliver e-commerce best practice and innovative technology to obtain hyper-efficient online distribution worldwide. Our promise to them includes data-driven marketing, the highest levels of order handling, safe payment, fastest delivery, and excellent customer support to ensure their customer’s satisfaction.</p>
             <div class="flex-grid flex-grid--no-resize">
                 <img class="partner-logo" src="../assets/Partner-apple-1.jpg" alt="Apple logo">
                 <img class="partner-logo" src="../assets/Partner-google-2.jpg" alt="Google logo">
                 <img class="partner-logo" src="../assets/Partner-spoty-3.jpg" alt="Spotify logo">
                 <img class="partner-logo" src="../assets/Partner-Sony-5.jpg" alt="Sony logo">
                 <img class="partner-logo" src="../assets/Partner-xbox-6.jpg" alt="Xbox logo">
+                <img class="partner-logo" src="../assets/Partner-nintendo-8.jpg" alt="Nintendo logo">
+                <img class="partner-logo" src="../assets/Partner-paysafe-9.jpg" alt="Paysafe logo">
             </div>
         </section>
         <section class="section">
@@ -55,6 +57,15 @@
                 </div>
             </div>
         </section>
+        <section 
+            class="section text-center" 
+            :style="{
+                background: `url(${require('../assets/rapido_banner.jpg')}) center no-repeat`,
+                backgroundSize: 'cover'
+            }">
+            <h2>We are always looking for talent</h2>
+            <a href="#" class="button m-top-l">See our vacancies</a>
+        </section>
     </div>
 </template>
 
@@ -62,6 +73,7 @@
     import TheHeader from '../components/TheHeader.vue';
     import TheNavigation from '../components/TheNavigation.vue';
     import CtaCard from '../components/CtaCard.vue';
+
     export default {
         components: {
             TheHeader,
@@ -82,4 +94,5 @@
 
 .partner-logo
     max-width: 150px
+    margin: 10px
 </style>
