@@ -6,6 +6,7 @@ import Rapido from './views/Rapido'
 import Recharge from './views/Recharge'
 import ManagementTeam from './views/ManagementTeam.vue'
 import WorkingWithUs from './views/WorkingWithUs'
+import OurTech from './views/OurTech.vue';
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export const createRouter = () => {
                 name: 'working-with-us',
                 path: '/working-with-us',
                 component: WorkingWithUs
+            },
+            {
+                name: 'our-tech',
+                path: '/our-tech',
+                component: OurTech
             }
         ]
     })
