@@ -4,7 +4,7 @@
             <img src="../assets/cg-logo.png" alt="logo">
         </div>
         <ul class="navigation__menu menu">
-            <li class="menu__item">Our Story</li>
+            <li class="menu__item"><router-link :to="{name: 'our-story'}">Our Story</router-link></li>
             <li class="menu__item">
                 <div class="menu__item menu__item--parent">Our Brands</div>
                 <div class="menu__item menu__item--nested">Rapido</div>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-
     export default {
         
     }
@@ -60,5 +59,8 @@
 
 .menu__item--nested
     visibility: hidden
+
+.router-link-active
+    color: #00b9f2
 
 </style>

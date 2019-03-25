@@ -41,17 +41,31 @@
         <section class="section">
             <h2 class="section__headline">Our Brands</h2>
             <div class="row row--narrow">
-                <div class="col">
-                    <cta-card>
+                <div class="flex-grid brands-list">
+                    <cta-card
+                        :key="1"
+                        subheadline="The future of payments"
+                        :button="{link: '#', label: 'Learn more'}"
+                        class="brands-list__card"
+                    >
                         <template v-slot:image>
                             <img src="../assets/recharge-logo-01.jpg" alt="Recharge logo">
                         </template>
+                        <template>
+                            <p>For expats who want to support their loved ones back home and for top-up users on the go, Recharge is the best place for recharging and paying accounts anywhere in the world from a mobile device.</p>
+                        </template>
                     </cta-card>
-                </div>
-                <div class="col">
-                    <cta-card>
+                    <cta-card
+                        :key="2"
+                        subheadline="Releasing digital value"
+                        :button="{link: '#', label: 'Learn more'}"
+                        class="brands-list__card"
+                    >
                         <template v-slot:image>
                             <img src="../assets/Rapido_header.jpg" alt="Rapido logo">
+                        </template>
+                        <template>
+                            <p>For all top-up users who want to enjoy a continuous service; Rapido is the best and largest online store, with the broadest selection of e-vouchers and the fastest delivery.</p>
                         </template>
                     </cta-card>
                 </div>
@@ -95,4 +109,8 @@
 .partner-logo
     max-width: 150px
     margin: 10px
+
+.brands-list__card
+    flex-basis: 40%
+    flex-grow: 1
 </style>

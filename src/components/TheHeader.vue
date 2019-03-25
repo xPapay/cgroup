@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header" :style="style">
         <slot></slot>
         <div class="center">
             <h1 v-if="headline" v-text="headline" class="headline"></h1>
@@ -16,6 +16,16 @@
             },
             subheadline: {
                 type: String
+            },
+            background: {
+                required: false
+            }
+        },
+        computed: {
+            style() {
+                return this.background
+                    ? {background: `url(${this.background}) center no-repeat`, backgroundSize: 'cover'}
+                    : {background: 'gray'}
             }
         }
     }
@@ -28,10 +38,12 @@
     position: relative
 
 .headline
+    text-align: center
     font-size: 4rem
     margin-bottom: 1rem
 
 .subheadline
+    text-align: center
     font-size: 1.5rem
 
 .headline, .subheadline

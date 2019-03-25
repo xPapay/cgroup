@@ -35,6 +35,7 @@
 .row
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
 
 .row--narrow
     max-width: 800px
@@ -44,7 +45,6 @@
     flex-basis: 40%
     flex-grow: 1
     min-width: 320px
-    margin: 0 20px
 
 .bigger-font
     font-size: 1.25rem
@@ -58,8 +58,11 @@
 .flex-grid
     display: flex
     flex-wrap: wrap
-    align-items: center
+    align-items: stretch
     justify-content: space-around
+
+    &--no-resize
+        align-items: center
 
     &--no-resize > *
         flex: 0

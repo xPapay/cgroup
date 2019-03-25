@@ -51,4 +51,10 @@
 .footer-menu__item > a
     padding: 5px 0
 
+.footer a
+    transition: color .3s
+    
+.footer a:hover
+    color: #00b9f2
+
 </style>
