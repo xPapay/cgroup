@@ -115,4 +115,6 @@
 .color-light
     color: white
 
+[v-cloak]
+    display: none
 </style>

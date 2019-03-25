@@ -14,7 +14,7 @@
                 <li class="footer-menu__item"><router-link to="#">Recharge</router-link></li>
                 <li class="footer-menu__item"><router-link to="#">Management Team</router-link></li>
                 <li class="footer-menu__item"><router-link to="#">Our Tech</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Working With Us</router-link></li>
+                <li class="footer-menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
                 <li class="footer-menu__item"><router-link to="#">Contact</router-link></li>
             </ul>
         </div>
@@ -53,7 +53,7 @@
 
 .footer a
     transition: color .3s
-    
+
 .footer a:hover
     color: #00b9f2
 

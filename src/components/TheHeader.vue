@@ -4,6 +4,7 @@
         <div class="center">
             <h1 v-if="headline" v-text="headline" class="headline"></h1>
             <h3 v-if="subheadline" v-text="subheadline" class="subheadline"></h3>
+            <slot name="cta"></slot>
         </div>
     </header>
 </template>

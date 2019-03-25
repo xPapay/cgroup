@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "hooper": "^0.1.1",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
     "vue-my-photos": "^1.0.4",
