@@ -3,10 +3,10 @@ const merge = require('webpack-merge')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-const commonConfig = require('./webpack.common')()
+const commonConfig = require('./webpack.common')
 // TODO: Import routes from router
 
-module.exports = merge(commonConfig, {
+const config = {
     entry: './src/entry-prerender.js',
     output: {
         publicPath: '/'
@@ -25,4 +25,8 @@ module.exports = merge(commonConfig, {
             })
         })
     ]
-})
+}
+
+module.exports = (env, argv) => {
+    return merge(commonConfig(env, argv), config)
+}
