@@ -4,9 +4,9 @@
         :class="{'hamburger--open': open}" 
         @click="$emit('click')"
     >
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
+        <div class="hamburger__line" :style="{background: color}"></div>
+        <div class="hamburger__line" :style="{background: color}"></div>
+        <div class="hamburger__line" :style="{background: color}"></div>
     </div>
 </template>
 
@@ -16,6 +16,10 @@
             open: {
                 type: Boolean,
                 default: false
+            },
+            color: {
+                type: String,
+                default: 'black'
             }
         }
     }
@@ -25,7 +29,6 @@
 .hamburger
     width: 40px
     height: 30px
-    background: lightpink
     display: flex
     flex-direction: column
     justify-content: space-between
