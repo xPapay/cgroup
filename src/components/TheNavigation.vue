@@ -3,20 +3,22 @@
         <router-link :to="{name: 'home'}" class="navigation__logo">
             <img :src="isAttached ? require('../assets/logo-light-type-246x60.png') : require('../assets/cg-logo.png')" alt="logo">
         </router-link>
-        <ul class="navigation__menu menu">
-            <li class="menu__item"><router-link :to="{name: 'our-story'}">Our Story</router-link></li>
-            <li class="menu__item">
-                <div class="menu__item menu__item--parent">Our Brands</div>
-                <div class="menu__nested">
-                    <div class="menu__item"><router-link :to="{name: 'rapido'}">Rapido</router-link></div>
-                    <div class="menu__item"><router-link :to="{name: 'recharge'}">Recharge</router-link></div>
-                </div>
-            </li>
-            <li class="menu__item"><router-link :to="{name: 'management-team'}">Management Team</router-link></li>
-            <li class="menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
-            <li class="menu__item"><router-link :to="{name: 'our-tech'}">Our Tech</router-link></li>
-            <li class="menu__item"><router-link :to="{name: 'contact'}">Contact</router-link></li>
-        </ul>
+        <div class="menu-wrapper">
+            <ul class="navigation__menu menu">
+                <li class="menu__item"><router-link :to="{name: 'our-story'}">Our Story</router-link></li>
+                <li class="menu__item">
+                    <div class="menu__item menu__item--parent">Our Brands</div>
+                    <div class="menu__nested">
+                        <div class="menu__item"><router-link :to="{name: 'rapido'}">Rapido</router-link></div>
+                        <div class="menu__item"><router-link :to="{name: 'recharge'}">Recharge</router-link></div>
+                    </div>
+                </li>
+                <li class="menu__item"><router-link :to="{name: 'management-team'}">Management Team</router-link></li>
+                <li class="menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
+                <li class="menu__item"><router-link :to="{name: 'our-tech'}">Our Tech</router-link></li>
+                <li class="menu__item"><router-link :to="{name: 'contact'}">Contact</router-link></li>
+            </ul>
+        </div>
     </nav>
 </template>
 
@@ -54,8 +56,9 @@
 .navigation
     display: flex
     align-items: center
+    justify-content: space-between
     z-index: 800
-    padding: 10px 0
+    padding: 10px 15px
     transition: all 0.8s
 
 .navigation--attached
@@ -79,6 +82,7 @@
     font-size: 0.9rem
     transition: color .3s
     position: relative
+    margin-left: 1rem
 
     & a
         padding: 10px
