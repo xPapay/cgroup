@@ -1,6 +1,6 @@
 <template>
     <div>
-        <the-header :background="require('../assets/Hero_Image-05-1920x714.png')">
+        <the-header :background="require('../assets/images/Hero_Image-05-1920x714.jpg')">
             <the-navigation />
         </the-header>
         <section class="section section--dark">
@@ -11,7 +11,7 @@
                         key="1"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Gunther_Profile-1-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Gunther_Profile-1-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>
@@ -21,7 +21,7 @@
                         key="2"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Linda_Profile-1-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Linda_Profile-1-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>
@@ -31,7 +31,7 @@
                         key="3"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Bas_Photo-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Bas_Photo-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>
@@ -41,7 +41,7 @@
                         key="4"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Martijn_Profile-1-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Martijn_Profile-1-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>
@@ -51,7 +51,7 @@
                         key="5"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Wibo_Profile-1-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Wibo_Profile-1-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>
@@ -61,7 +61,7 @@
                         key="6"
                         class="feature-card flex-grid__feature-card"
                     >
-                        <img class="feature-card__image" :src="require('../assets/Martine_Profile-1-255x255.jpg')">                
+                        <img class="feature-card__image" :src="require('../assets/images/Martine_Profile-1-255x255.jpg')">                
                         <h3 class="feature-card__title">Günther Vogelpoel</h3>
                         <h4 class="feature-card__subtitle muted-text">CEO</h4>
                         <p class="feature-card__text">Günther (48) is an experienced CEO with background in the telecoms industry and as a market challenger. He is one of the main idealists behind our future plans and a great team activator keeping us focused.</p>

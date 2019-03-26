@@ -9,8 +9,8 @@
     import TheFooter from './components/TheFooter.vue';
     import TheNavigation from './components/TheNavigation'
     import 'normalize.css'
-    import './assets/app.sass'
-    import './assets/iconfont.css'
+    import './assets/styles/app.sass'
+    import './assets/styles/iconfont.css'
     export default {
         components: {
             TheFooter,

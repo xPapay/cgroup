@@ -2,6 +2,9 @@ const path = require('path')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+const isProd = process.env.NODE_ENV === 'production'
 
 const config = {
 	devtool: 'inline-source-map',
@@ -31,12 +34,15 @@ const config = {
 			},
 			{
 				test: /\.css$/,
-				use: ['vue-style-loader', 'css-loader']
+				use: [
+					isProd ? MiniCssExtractPlugin.loader : 'vue-style-loader', 
+					'css-loader'
+				]
 			},
 			{
 				test: /\.sass$/,
 				use: [
-					'vue-style-loader',
+					isProd ? MiniCssExtractPlugin.loader : 'vue-style-loader',
 					'css-loader',
 					{
 						loader: 'sass-loader',
@@ -49,7 +55,7 @@ const config = {
 			{
 				test: /\.scss$/,
 				use: [
-					'vue-style-loader',
+					isProd ? MiniCssExtractPlugin.loader : 'vue-style-loader',
 					'css-loader',
 					'sass-loader'
 				]
@@ -59,12 +65,12 @@ const config = {
 				use: {
 					loader: 'file-loader',
 					options: {
-						outputPath: 'assets'
+						outputPath: 'assets/images'
 					}
 				} 
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|svg)$/,
+				test: /\.(woff|woff2|eot|ttf)$/,
 				loader: 'url-loader',
 				options: {
 					limit: 10000
@@ -78,7 +84,8 @@ const config = {
 }
 
 module.exports = (env, argv) => {
-	if (argv && argv.mode === 'production') {
+	const isProd = argv && argv.mode === 'production'
+	if (isProd) {
 		console.log(`We are in production. So let's minify`)
 		config.devtool = 'source-map'
 		config.optimization = {
@@ -86,7 +93,19 @@ module.exports = (env, argv) => {
 				new TerserPlugin(), // minify js
 				new OptimizeCSSAssetsPlugin() // minify css
 			]
-		}
+		},
+		config.plugins.push(new MiniCssExtractPlugin({
+			filename: isProd ? 'assets/css/[name].[hash].css' : 'assets/css/[name].css'
+		}))
+		config.module.rules.push({
+			test: /\.(jpg|png|gif|svg)$/,
+        	use: {
+				loader: 'image-webpack-loader',
+				options: {
+					enforce: 'pre'
+				}
+			}
+		})
 	}
 
 	return config

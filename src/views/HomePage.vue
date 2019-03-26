@@ -3,7 +3,7 @@
         <the-header 
             headline="Tomorrow Is Exciting"
             subheadline="A subheadline"
-            :background="require('../assets/Home_Header_CG-02-1920x1045.jpg')"
+            :background="require('../assets/images/Home_Header_CG-02-1920x1045.jpg')"
         >
             <the-navigation />
         </the-header>
@@ -12,8 +12,8 @@
                 <div class="awards">
                     <div class="awards__headline">Awards</div>
                     <div class="awards__list flex-grid flex-grid--no-resize">
-                        <img src="../assets/FDGazellen-logo.jpg" alt="FDGazellen logo">
-                        <img src="../assets/Deloitte-logo.jpg" alt="FDGazellen logo">
+                        <img src="../assets/images/FDGazellen-logo.jpg" alt="FDGazellen logo">
+                        <img src="../assets/images/Deloitte-logo.jpg" alt="FDGazellen logo">
                     </div>
                 </div>
                 <div class="separator"></div>
@@ -31,13 +31,13 @@
                 <h2 class="section__headline">Our Partners</h2>
                 <p class="text-center">Our international business partners trust us to deliver e-commerce best practice and innovative technology to obtain hyper-efficient online distribution worldwide. Our promise to them includes data-driven marketing, the highest levels of order handling, safe payment, fastest delivery, and excellent customer support to ensure their customer’s satisfaction.</p>
                 <div class="flex-grid flex-grid--no-resize">
-                    <img class="partner-logo" src="../assets/Partner-apple-1.jpg" alt="Apple logo">
-                    <img class="partner-logo" src="../assets/Partner-google-2.jpg" alt="Google logo">
-                    <img class="partner-logo" src="../assets/Partner-spoty-3.jpg" alt="Spotify logo">
-                    <img class="partner-logo" src="../assets/Partner-Sony-5.jpg" alt="Sony logo">
-                    <img class="partner-logo" src="../assets/Partner-xbox-6.jpg" alt="Xbox logo">
-                    <img class="partner-logo" src="../assets/Partner-nintendo-8.jpg" alt="Nintendo logo">
-                    <img class="partner-logo" src="../assets/Partner-paysafe-9.jpg" alt="Paysafe logo">
+                    <img class="partner-logo" src="../assets/images/Partner-apple-1.jpg" alt="Apple logo">
+                    <img class="partner-logo" src="../assets/images/Partner-google-2.jpg" alt="Google logo">
+                    <img class="partner-logo" src="../assets/images/Partner-spoty-3.jpg" alt="Spotify logo">
+                    <img class="partner-logo" src="../assets/images/Partner-Sony-5.jpg" alt="Sony logo">
+                    <img class="partner-logo" src="../assets/images/Partner-xbox-6.jpg" alt="Xbox logo">
+                    <img class="partner-logo" src="../assets/images/Partner-nintendo-8.jpg" alt="Nintendo logo">
+                    <img class="partner-logo" src="../assets/images/Partner-paysafe-9.jpg" alt="Paysafe logo">
                 </div>
             </div>
         </section>
@@ -51,7 +51,7 @@
                             class="brand-card flex-grid__brand-card"
                         >
                             <div class="brand-card__body">
-                                <img class="brand-card__image" src="../assets/recharge-logo-01.jpg" alt="Recharge logo">
+                                <img class="brand-card__image" src="../assets/images/recharge-logo-01.jpg" alt="Recharge logo">
                                 <h4 class="brand-card__title">The future of payments</h4>
                                 <p>For expats who want to support their loved ones back home and for top-up users on the go, Recharge is the best place for recharging and paying accounts anywhere in the world from a mobile device.</p>
                             </div>
@@ -64,7 +64,7 @@
                             class="brand-card flex-grid__brand-card"
                         >
                             <div class="brand-card__body">
-                                <img class="brand-card__image" src="../assets/Rapido_header.jpg" alt="Rapido logo">
+                                <img class="brand-card__image" src="../assets/images/Rapido_header.jpg" alt="Rapido logo">
                                 <h4 class="brand-card__title">Releasing digital value</h4>                            
                                 <p>For all top-up users who want to enjoy a continuous service; Rapido is the best and largest online store, with the broadest selection of e-vouchers and the fastest delivery.</p>
                             </div>
@@ -79,7 +79,7 @@
         <section 
             class="section text-center" 
             :style="{
-                background: `url(${require('../assets/rapido_banner.jpg')}) center no-repeat`,
+                background: `url(${require('../assets/images/rapido_banner.jpg')}) center no-repeat`,
                 backgroundSize: 'cover'
             }">
             <div class="content">

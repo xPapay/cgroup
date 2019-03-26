@@ -1,7 +1,7 @@
 <template>
     <nav class="navigation" :class="{'navigation--attached': isAttached}" ref="navigation">
         <router-link :to="{name: 'home'}" class="navigation__logo">
-            <img :src="isAttached ? require('../assets/logo-light-type-246x60.png') : require('../assets/cg-logo.png')" alt="logo">
+            <img :src="isAttached ? require('../assets/images/logo-light-type-246x60.png') : require('../assets/images/cg-logo.png')" alt="logo">
         </router-link>
         <div class="menu-wrapper">
             <div class="hamburger-wrapper">

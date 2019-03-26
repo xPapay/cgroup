@@ -1,6 +1,6 @@
 <template>
     <div>
-        <the-header :background="require('../assets/tech-header-01.jpg')">
+        <the-header :background="require('../assets/images/tech-header-01.jpg')">
             <the-navigation />
         </the-header>
         <section class="section tech-insights">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col text-right">
-                        <img :src="require('../assets/microservices-01.jpg')">
+                        <img :src="require('../assets/images/microservices-01.jpg')">
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col">
-                        <img :src="require('../assets/cloud-01.png')">
+                        <img :src="require('../assets/images/cloud-01.png')">
                     </div>
                     <div class="col">
                         <h2 class="section__headline text-left">Cloud</h2>
@@ -117,13 +117,13 @@
                 </div>
                 <div class="separator"></div>
                 <div class="flex-grid flex-grid--no-resize">
-                    <img class="partner-logo" src="../assets/Partner-apple-1.jpg" alt="Apple logo">
-                    <img class="partner-logo" src="../assets/Partner-google-2.jpg" alt="Google logo">
-                    <img class="partner-logo" src="../assets/Partner-spoty-3.jpg" alt="Spotify logo">
-                    <img class="partner-logo" src="../assets/Partner-Sony-5.jpg" alt="Sony logo">
-                    <img class="partner-logo" src="../assets/Partner-xbox-6.jpg" alt="Xbox logo">
-                    <img class="partner-logo" src="../assets/Partner-nintendo-8.jpg" alt="Nintendo logo">
-                    <img class="partner-logo" src="../assets/Partner-paysafe-9.jpg" alt="Paysafe logo">
+                    <img class="partner-logo" src="../assets/images/Partner-apple-1.jpg" alt="Apple logo">
+                    <img class="partner-logo" src="../assets/images/Partner-google-2.jpg" alt="Google logo">
+                    <img class="partner-logo" src="../assets/images/Partner-spoty-3.jpg" alt="Spotify logo">
+                    <img class="partner-logo" src="../assets/images/Partner-Sony-5.jpg" alt="Sony logo">
+                    <img class="partner-logo" src="../assets/images/Partner-xbox-6.jpg" alt="Xbox logo">
+                    <img class="partner-logo" src="../assets/images/Partner-nintendo-8.jpg" alt="Nintendo logo">
+                    <img class="partner-logo" src="../assets/images/Partner-paysafe-9.jpg" alt="Paysafe logo">
                 </div>
             </div>
         </section>

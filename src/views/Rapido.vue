@@ -1,13 +1,13 @@
 <template>
     <div>
-        <the-header :background="require('../assets/Rapido_header-1920x1280.jpg')">
+        <the-header :background="require('../assets/images/Rapido_header-1920x1280.jpg')">
             <the-navigation />
         </the-header>
         <section class="section">
             <div class="content">
                 <div class="awards">
                     <div class="flex-grid flex-grid--no-resize">
-                        <img src="../assets/FDGazellen-logo.jpg" alt="FDGazellen logo">
+                        <img src="../assets/images/FDGazellen-logo.jpg" alt="FDGazellen logo">
                     </div>
                 </div>
                 <h2 class="section__headline">Transitioning the top-up market from offline to the online space</h2>
@@ -27,7 +27,7 @@
                     :key="1"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -36,7 +36,7 @@
                     :key="2"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -45,7 +45,7 @@
                     :key="3"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -55,7 +55,7 @@
         <section 
             class="section" 
             :style="{
-                background: `url(${require('../assets/rapido_Behind_Copy-03.jpg')}) 50% 35% no-repeat`,
+                background: `url(${require('../assets/images/rapido_Behind_Copy-03.jpg')}) 50% 35% no-repeat`,
                 backgroundSize: 'cover'
             }">
             <div class="content">
@@ -81,7 +81,7 @@
         <section 
             class="section text-center" 
             :style="{
-                background: `url(${require('../assets/rapido_banner.jpg')}) center no-repeat`,
+                background: `url(${require('../assets/images/rapido_banner.jpg')}) center no-repeat`,
                 backgroundSize: 'cover'
             }">
             <div class="content">

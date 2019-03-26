@@ -1,7 +1,7 @@
 <template>
     <div>
         <the-header 
-            :background="require('../assets/wwu-header-05-1920x904.jpg')"
+            :background="require('../assets/images/wwu-header-05-1920x904.jpg')"
             headline="Welcome To Our Unique Adventure"
         >
             <the-navigation />
@@ -32,72 +32,72 @@
                 <fluid-grid>
                     <template v-slot:col-1>
                         <div>
-                            <img :src="require('../assets/01.jpg')">
+                            <img :src="require('../assets/images/01.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/05.jpg')">
+                            <img :src="require('../assets/images/05.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/08.jpg')">
+                            <img :src="require('../assets/images/08.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/11.jpg')">
+                            <img :src="require('../assets/images/11.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/14-1024x1000.jpg')">
+                            <img :src="require('../assets/images/14-1024x1000.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/17.jpg')">
+                            <img :src="require('../assets/images/17.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/18.jpg')">
+                            <img :src="require('../assets/images/18.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/21.jpg')">
+                            <img :src="require('../assets/images/21.jpg')">
                         </div>
                     </template>
 
                     <template v-slot:col-2>
                         <div>
-                            <img :src="require('../assets/02-1024x817.jpg')">
+                            <img :src="require('../assets/images/02-1024x817.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/04.jpg')">
+                            <img :src="require('../assets/images/04.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/07.jpg')">
+                            <img :src="require('../assets/images/07.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/09.jpg')">
+                            <img :src="require('../assets/images/09.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/12-1024x595.jpg')">
+                            <img :src="require('../assets/images/12-1024x595.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/15-683x1024.jpg')">
+                            <img :src="require('../assets/images/15-683x1024.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/20.jpg')">
+                            <img :src="require('../assets/images/20.jpg')">
                         </div>
                     </template>
                     <template v-slot:col-3>
                         <div>
-                            <img :src="require('../assets/03-759x1024.jpg')">
+                            <img :src="require('../assets/images/03-759x1024.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/06.jpg')">
+                            <img :src="require('../assets/images/06.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/10.jpg')">
+                            <img :src="require('../assets/images/10.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/13.jpg')">
+                            <img :src="require('../assets/images/13.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/16.jpg')">
+                            <img :src="require('../assets/images/16.jpg')">
                         </div>
                         <div>
-                            <img :src="require('../assets/19.jpg')">
+                            <img :src="require('../assets/images/19.jpg')">
                         </div>
                         
                     </template>
@@ -122,12 +122,12 @@
                         <p>Results drive us. We set smart goals, commit and deliver. We look forward: always having our goals in mind, ready for action, creating a better tomorrow. We strive to be as agile as we can possibly be. We test, improve and experiment, step by step, determined to win. We focus and finish, working together towards our goals.</p>
                     </div>
                     <div class="col values__col">
-                        <img :src="require('../assets/wwu-tile-01.jpg')" alt="Our values">
+                        <img :src="require('../assets/images/wwu-tile-01.jpg')" alt="Our values">
                     </div>
                 </div>
                 <div class="row values__row">
                     <div class="col values__col">
-                        <img :src="require('../assets/wwu-tile-01.jpg')" alt="Our values">
+                        <img :src="require('../assets/images/wwu-tile-01.jpg')" alt="Our values">
                     </div>
                     <div class="col values__col">
                         <h2>Customers first</h2>
@@ -143,7 +143,7 @@
         <section 
             class="section" 
             :style="{
-                background: `url(${require('../assets/bg-activites-02.jpg')}) 50% 35% no-repeat`,
+                background: `url(${require('../assets/images/bg-activites-02.jpg')}) 50% 35% no-repeat`,
                 backgroundSize: 'cover'
             }">
             <div class="content">
@@ -169,22 +169,22 @@
                 <div class="row row--narrow">
                     <h2 class="section__headline">As a Creative Group employee, you can be a part of these communities:</h2>
                     <div class="col text-center communities__col">
-                        <img :src="require('../assets/CG_Active-1-150x150.png')">
+                        <img :src="require('../assets/images/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
                     <div class="col text-center communities__col">
-                        <img :src="require('../assets/CG_Active-1-150x150.png')">
+                        <img :src="require('../assets/images/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
                     <div class="col text-center communities__col">
-                        <img :src="require('../assets/CG_Active-1-150x150.png')">
+                        <img :src="require('../assets/images/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
                     <div class="col text-center communities__col">
-                        <img :src="require('../assets/CG_Active-1-150x150.png')">
+                        <img :src="require('../assets/images/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
@@ -200,7 +200,7 @@
         <section 
             class="section text-center" 
             :style="{
-                background: `url(${require('../assets/rapido_banner.jpg')}) center no-repeat`,
+                background: `url(${require('../assets/images/rapido_banner.jpg')}) center no-repeat`,
                 backgroundSize: 'cover'
             }">
             <div class="content">
@@ -215,7 +215,7 @@
                     <hooper :wheelControl="false" v-cloak>
                         <slide>
                             <div class="testimonial">
-                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <img class="testimonial__avatar":src="require('../assets/images/Linda-02.jpg')" alt="Linda">
                                 <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
                                 <p>
                                     I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
@@ -233,7 +233,7 @@
                         </slide>
                         <slide>
                             <div class="testimonial">
-                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <img class="testimonial__avatar":src="require('../assets/images/Linda-02.jpg')" alt="Linda">
                                 <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
                                 <p>
                                     I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
@@ -251,7 +251,7 @@
                         </slide>
                         <slide>
                             <div class="testimonial">
-                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <img class="testimonial__avatar":src="require('../assets/images/Linda-02.jpg')" alt="Linda">
                                 <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
                                 <p>
                                     I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.

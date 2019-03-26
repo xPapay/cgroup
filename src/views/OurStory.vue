@@ -3,7 +3,7 @@
         <the-header
             headline="A Journey Of Creative Disruption"
             subheadline="Leading The Exchange Of Digital Value Internationally"
-            :background="require('../assets/OurStory_Header_05.jpg')"
+            :background="require('../assets/images/OurStory_Header_05.jpg')"
         >
             <the-navigation />
         </the-header>
@@ -46,7 +46,7 @@
                     :key="1"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -55,7 +55,7 @@
                     :key="2"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -64,7 +64,7 @@
                     :key="3"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -73,7 +73,7 @@
                     :key="4"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -82,7 +82,7 @@
                     :key="5"
                     class="feature-card flex-grid__feature-card"
                 >
-                    <img :src="require('../assets/Icon-1-Tech-150x150.jpg')">                
+                    <img :src="require('../assets/images/Icon-1-Tech-150x150.jpg')">                
                     <h2 class="feature-card__title">Cutting-edge technology</h2>
                     <h4 class="feature-card__subtitle">Our mentality for technology is a central driver of our journey</h4>
                     <p class="feature-card__text">To handle millions of orders worldwide each day, we’ve created our own software solution based on open source technology. By using a highly modular and service-oriented architecture, we are able to continuously update and improve the user experience of our multiple brands online.</p>
@@ -109,10 +109,10 @@
         computed: {
             images() {
                 return [
-                    {name: require('../assets/OurStory_thumb_06.jpg'), alt: "Creative's group story"},
-                    {name: require('../assets/OurStory_thumb_05.jpg'), alt: "Creative's group story"},
-                    {name: require('../assets/OurStory_thumb_04.jpg'), alt: "Creative's group story"},
-                    {name: require('../assets/OurStory_thumb_03.jpg'), alt: "Creative's group story"}
+                    {name: require('../assets/images/OurStory_thumb_06.jpg'), alt: "Creative's group story"},
+                    {name: require('../assets/images/OurStory_thumb_05.jpg'), alt: "Creative's group story"},
+                    {name: require('../assets/images/OurStory_thumb_04.jpg'), alt: "Creative's group story"},
+                    {name: require('../assets/images/OurStory_thumb_03.jpg'), alt: "Creative's group story"}
                 ]
             }
         },
