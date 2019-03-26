@@ -1,28 +1,30 @@
 <template>
-    <footer class="footer row">
-        <div class="col">
-            <h2>Contact</h2>
-            <p>Amsteldijk 216, 1079 LK Amsterdam</p>
-            <p>info@cg.nl</p>
-            <p>+31 (0) 88 006 4190</p>
-        </div>
-        <div class="col">
-            <h2>Company</h2>
-            <ul class="footer__menu footer-menu">
-                <li class="footer-menu__item"><router-link to="#">Our Story</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Rapido</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Recharge</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Management Team</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Our Tech</router-link></li>
-                <li class="footer-menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
-                <li class="footer-menu__item"><router-link to="#">Contact</router-link></li>
-            </ul>
-        </div>
-        <div class="separator"></div>
-        <div class="footer__copyright">
-            <small>© 2019 Creative Group. All right reserved.</small>
-            <div>
-                <small><a href="#">Cookie Policy</a> - <a href="#">Sitemap</a></small>
+    <footer class="footer">
+        <div class="content row">
+            <div class="col">
+                <h2>Contact</h2>
+                <p>Amsteldijk 216, 1079 LK Amsterdam</p>
+                <p>info@cg.nl</p>
+                <p>+31 (0) 88 006 4190</p>
+            </div>
+            <div class="col">
+                <h2>Company</h2>
+                <ul class="footer__menu footer-menu">
+                    <li class="footer-menu__item"><router-link to="#">Our Story</router-link></li>
+                    <li class="footer-menu__item"><router-link to="#">Rapido</router-link></li>
+                    <li class="footer-menu__item"><router-link to="#">Recharge</router-link></li>
+                    <li class="footer-menu__item"><router-link to="#">Management Team</router-link></li>
+                    <li class="footer-menu__item"><router-link to="#">Our Tech</router-link></li>
+                    <li class="footer-menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
+                    <li class="footer-menu__item"><router-link to="#">Contact</router-link></li>
+                </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="footer__copyright">
+                <small>© 2019 Creative Group. All right reserved.</small>
+                <div>
+                    <small><a href="#">Cookie Policy</a> - <a href="#">Sitemap</a></small>
+                </div>
             </div>
         </div>
     </footer>

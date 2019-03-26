@@ -4,24 +4,26 @@
             <the-navigation />
         </the-header>
         <section class="section contact">
-            <div class="row">
-                <div class="col col-map">
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Amsteldijk%20216%2C%201079%20LK%20Amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            </iframe>
+            <div class="content">
+                <div class="row">
+                    <div class="col col-map">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Amsteldijk%20216%2C%201079%20LK%20Amsterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-contact-form">
-                    <div class="contact-info">
-                        <div class="address"><i class="icon icon-marker"/>Address: Amsteldijk 216, 1079 LK Amsterdam</div>
-                        <div class="phone"><i class="icon icon-phone"/>Phone: +31 (0) 88 006 4190</div>
-                        <div class="email"><i class="icon icon-envelope"/>E-mail: info@cg.nl</div>
+                    <div class="col col-contact-form">
+                        <div class="contact-info">
+                            <div class="address"><i class="icon icon-marker"/>Address: Amsteldijk 216, 1079 LK Amsterdam</div>
+                            <div class="phone"><i class="icon icon-phone"/>Phone: +31 (0) 88 006 4190</div>
+                            <div class="email"><i class="icon icon-envelope"/>E-mail: info@cg.nl</div>
+                        </div>
+                        <div class="separator"></div>
+                        <h3>Send us a message</h3>
+                        <contact-form class="contact-form"/>
                     </div>
-                    <div class="separator"></div>
-                    <h3>Send us a message</h3>
-                    <contact-form class="contact-form"/>
                 </div>
             </div>
         </section>

@@ -1,6 +1,5 @@
 <template>
     <div class="page">
-        <the-navigation/>
         <router-view></router-view>
         <the-footer/>
     </div>
@@ -22,6 +21,12 @@
 
 <style lang="sass">
 // there should be only layout styling, e.g. how high-level components lay together
+.content
+    max-width: 1140px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+
 .section
     background: white
     padding-top: 40px
