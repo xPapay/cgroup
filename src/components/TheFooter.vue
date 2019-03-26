@@ -9,14 +9,8 @@
             </div>
             <div class="col">
                 <h2>Company</h2>
-                <ul class="footer__menu footer-menu">
-                    <li class="footer-menu__item"><router-link to="#">Our Story</router-link></li>
-                    <li class="footer-menu__item"><router-link to="#">Rapido</router-link></li>
-                    <li class="footer-menu__item"><router-link to="#">Recharge</router-link></li>
-                    <li class="footer-menu__item"><router-link to="#">Management Team</router-link></li>
-                    <li class="footer-menu__item"><router-link to="#">Our Tech</router-link></li>
-                    <li class="footer-menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
-                    <li class="footer-menu__item"><router-link to="#">Contact</router-link></li>
+                <ul class="footer__menu footer-menu" v-for="link in links">
+                    <li class="footer-menu__item" :key="link.name"><router-link :to="{name: link.name}">{{ link.label }}</router-link></li>
                 </ul>
             </div>
             <div class="separator"></div>
@@ -31,8 +25,24 @@
 </template>
 
 <script>
+    import { routes } from '../router.js'
     export default {
-        
+        computed: {
+            links() {
+                let generatedRoutes = []
+                routes.map(route => {
+                    if (route.name === 'home') {
+                        return
+                    }
+
+                    generatedRoutes.push({
+                        ...route,
+                        label: route.name.replace(/-/g, ' ')
+                    })
+                })
+                return generatedRoutes
+            }
+        }
     }
 </script>
 
@@ -49,6 +59,7 @@
 .footer-menu__item
     color: #00b9f2
     margin: 20px 0
+    text-transform: capitalize
 
 .footer-menu__item > a
     padding: 5px 0

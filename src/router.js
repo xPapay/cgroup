@@ -11,51 +11,53 @@ import Contact from './views/Contact'
 
 Vue.use(Router)
 
+export const routes = [
+    {
+        name: 'home',
+        path: '/',
+        component: HomePage
+    },
+    {
+        name: 'our-story',
+        path: '/our-story',
+        component: OurStory
+    },
+    {
+        name: 'rapido',
+        path: '/rapido',
+        component: Rapido
+    },
+    {
+        name: 'recharge',
+        path: '/recharge',
+        component: Recharge
+    },
+    {
+        name: 'management-team',
+        path: '/management-team',
+        component: ManagementTeam
+    },
+    {
+        name: 'working-with-us',
+        path: '/working-with-us',
+        component: WorkingWithUs
+    },
+    {
+        name: 'our-tech',
+        path: '/our-tech',
+        component: OurTech
+    },
+    {
+        name: 'contact',
+        path: '/contact',
+        component: Contact
+    }
+]
+
 export const createRouter = () => {
     return new Router({
         mode: 'history',
-        routes: [
-            {
-                name: 'home',
-                path: '/',
-                component: HomePage
-            },
-            {
-                name: 'our-story',
-                path: '/our-story',
-                component: OurStory
-            },
-            {
-                name: 'rapido',
-                path: '/rapido',
-                component: Rapido
-            },
-            {
-                name: 'recharge',
-                path: '/recharge',
-                component: Recharge
-            },
-            {
-                name: 'management-team',
-                path: '/management-team',
-                component: ManagementTeam
-            },
-            {
-                name: 'working-with-us',
-                path: '/working-with-us',
-                component: WorkingWithUs
-            },
-            {
-                name: 'our-tech',
-                path: '/our-tech',
-                component: OurTech
-            },
-            {
-                name: 'contact',
-                path: '/contact',
-                component: Contact
-            }
-        ]
+        routes
     })
 }
 
