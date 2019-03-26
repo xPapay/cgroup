@@ -56,7 +56,12 @@ const config = {
 			},
 			{
 				test: /\.(png|jpg|jpeg|gif|svg)$/,
-				use: 'file-loader'
+				use: {
+					loader: 'file-loader',
+					options: {
+						outputPath: 'assets'
+					}
+				} 
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|svg)$/,
