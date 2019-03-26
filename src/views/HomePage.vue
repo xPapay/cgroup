@@ -100,6 +100,11 @@
             TheHeader,
             CtaCard,
             TheNavigation
+        },
+        computed: {
+            title() {
+                return 'Creative Group'
+            }
         }
     }
 </script>

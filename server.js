@@ -104,7 +104,7 @@ function render(req, res) {
     console.log('server hit')
     const context = {
         url: req.url,
-        title: 'default title'
+        title: 'Creative Group'
     }
 
     renderer.renderToString(context)
