@@ -41,7 +41,8 @@
 .section__headline
     text-align: center
     font-size: 1.75rem
-    padding: 30px
+    padding: 0 30px
+    padding-left: 0
 
 .row
     display: flex
@@ -56,6 +57,12 @@
     flex-basis: 40%
     flex-grow: 1
     min-width: 320px
+
+    & > img
+        max-width: 100%
+
+.col--no-grow
+    flex-grow: 0
 
 .bigger-font
     font-size: 1.25rem
