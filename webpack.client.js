@@ -6,14 +6,13 @@ const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 
 const config = {
 	entry: './src/entry-client.js',
-	// TODO: CHECK IF VUE-LOADER HOTRELOAD IS ENABLED
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env.VUE_ENV': '"client"'
 		}),
 		new VueSSRClientPlugin()
 	],
-	optimization: { // TODO: verify that it merged on not overwrote production optimization
+	optimization: {
 		splitChunks: {
 			chunks: 'all'
 		}

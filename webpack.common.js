@@ -60,7 +60,10 @@ const config = {
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|svg)$/,
-				use: 'url-loader'
+				loader: 'url-loader',
+				options: {
+					limit: 10000
+				}
 			}
 		]
     },
