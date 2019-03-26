@@ -4,6 +4,7 @@
             <img :src="isAttached ? require('../assets/logo-light-type-246x60.png') : require('../assets/cg-logo.png')" alt="logo">
         </router-link>
         <div class="menu-wrapper">
+            <hamburger-menu :open="mobileMenuOpen" @click="mobileMenuOpen = !mobileMenuOpen" />
             <ul class="navigation__menu menu">
                 <li class="menu__item"><router-link :to="{name: 'our-story'}">Our Story</router-link></li>
                 <li class="menu__item">
@@ -24,10 +25,15 @@
 
 <script>
     import { throttle } from 'lodash'
+    import HamburgerMenu from './HamburgerMenu'
     export default {
+        components: {
+            HamburgerMenu,
+        },
         data() {
             return {
-                isAttached: false
+                isAttached: false,
+                mobileMenuOpen: false
             }
         },
         mounted() {
@@ -117,5 +123,4 @@
 
 .router-link-active
     color: #00b9f2
-
 </style>
