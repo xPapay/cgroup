@@ -25,24 +25,9 @@
 </template>
 
 <script>
-    import { routes } from '../router.js'
+    import { linksMixin } from '../mixins/LinksMixin.js'
     export default {
-        computed: {
-            links() {
-                let generatedRoutes = []
-                routes.map(route => {
-                    if (route.name === 'home') {
-                        return
-                    }
-
-                    generatedRoutes.push({
-                        ...route,
-                        label: route.name.replace(/-/g, ' ')
-                    })
-                })
-                return generatedRoutes
-            }
-        }
+        mixins: [linksMixin]
     }
 </script>
 
