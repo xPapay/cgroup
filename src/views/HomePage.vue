@@ -129,4 +129,5 @@
 .flex-grid__brand-card
     flex-basis: 40%
     flex-grow: 1
+    margin: 10px
 </style>
