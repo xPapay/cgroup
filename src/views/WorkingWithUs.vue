@@ -147,43 +147,52 @@
                 backgroundSize: 'cover'
             }">
             <div class="content">
-                <h2 class="color-light light-font text-center">Rapido is a certified platform for iTunes, Google Play, Sony PSN, Xbox, Netflix, Spotify and many other leading brands in entertainment, telecom, gaming and the prepaid credit industry.</h2>
-                <div class="row row--narrow color-light">
-                    <p class="col higher-lines margin-s">
+                <h2 class="color-light light-font text-center">
+                    Your adventure. We offer you an adventure you will find once in your lifetime.
+                    You’ll be a part of our high growth, technology driven, 100% digital, global scale-up company, based in the Netherlands.
+                </h2>
+                <div class="row row--narrow color-light m-top-l">
+                    <p class="col higher-lines margin-s bigger-font">
                         We offer our customers and partners a powerful and responsive technology. 
                         Our partners trust us to provide great online distribution; 
                         offering regional flexibility and personalised promotions to the end user.
                     </p>
-                    <p class="col higher-lines margin-s">
+                    <p class="col higher-lines margin-s bigger-font">
                         Through Rapido, multiple international brands access high-reach media 
                         channels for introductions of new products and boosting special promotions.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section communities">
             <div class="content">
                 <div class="row row--narrow">
                     <h2 class="section__headline">As a Creative Group employee, you can be a part of these communities:</h2>
-                    <div class="col text-center">
+                    <div class="col text-center communities__col">
                         <img :src="require('../assets/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
-                    <div class="col text-center">
+                    <div class="col text-center communities__col">
                         <img :src="require('../assets/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
-                    <div class="col text-center">
+                    <div class="col text-center communities__col">
                         <img :src="require('../assets/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
                     </div>
-                    <div class="col text-center">
+                    <div class="col text-center communities__col">
                         <img :src="require('../assets/CG_Active-1-150x150.png')">
                         <h3>CG Active</h3>
                         <p>Take part in the weekly bootcamp or yoga sessions with your team, grab an apple from the fruit basket and be well.</p>
+                    </div>
+                </div>
+                <div class="row row--narrow text-center m-top-l">
+                    <div class="col">
+                        <h3>When we grow, you grow</h3>
+                        <p class="bigger-font">You’ll find new responsibilities and learn from new challenges each and every day. No dullness, guaranteed. We expect a lot from you and you can expect a lot in return. You can expect to learn what it’s like to be an entrepreneur. That’s because you will be one when you join us.</p>
                     </div>
                 </div>
             </div>
@@ -202,64 +211,66 @@
         <section class="section section--dark">
             <div class="content">
                 <h2 class="section__headline">From our team</h2>
-                <hooper :wheelControl="false" v-cloak>
-                    <slide>
-                        <div class="testimonial">
-                            <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
-                            <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
-                            <p>
-                                I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
-                            </p>
-                            <p>
-                                It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
-                                The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
-                            </p>
-                            <p>
-                                We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
-                                Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
-                                Life at Creative Group is a roller coaster, and I really enjoy the ride!
-                            </p>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="testimonial">
-                            <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
-                            <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
-                            <p>
-                                I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
-                            </p>
-                            <p>
-                                It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
-                                The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
-                            </p>
-                            <p>
-                                We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
-                                Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
-                                Life at Creative Group is a roller coaster, and I really enjoy the ride!
-                            </p>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="testimonial">
-                            <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
-                            <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
-                            <p>
-                                I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
-                            </p>
-                            <p>
-                                It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
-                                The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
-                            </p>
-                            <p>
-                                We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
-                                Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
-                                Life at Creative Group is a roller coaster, and I really enjoy the ride!
-                            </p>
-                        </div>
-                    </slide>
-                    <hooper-navigation slot="hooper-addons"></hooper-navigation>
-                    <hooper-pagination slot="hooper-addons"></hooper-pagination>
-                </hooper>
+                <div class="row row--narrow">
+                    <hooper :wheelControl="false" v-cloak>
+                        <slide>
+                            <div class="testimonial">
+                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
+                                <p>
+                                    I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
+                                </p>
+                                <p>
+                                    It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
+                                    The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
+                                </p>
+                                <p>
+                                    We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
+                                    Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
+                                    Life at Creative Group is a roller coaster, and I really enjoy the ride!
+                                </p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="testimonial">
+                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
+                                <p>
+                                    I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
+                                </p>
+                                <p>
+                                    It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
+                                    The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
+                                </p>
+                                <p>
+                                    We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
+                                    Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
+                                    Life at Creative Group is a roller coaster, and I really enjoy the ride!
+                                </p>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="testimonial">
+                                <img class="testimonial__avatar":src="require('../assets/Linda-02.jpg')" alt="Linda">
+                                <p class="testimonial__intro">My name is Linda and I have been working at Creative Group since December 2016.</p>
+                                <p>
+                                    I started as a Financial Controller, and half a year later I got a broader role and responsibilities as Manager Finance &amp; Control. From January 2018 onwards, I’ve taken on the role of Chief Financial Officer.
+                                </p>
+                                <p>
+                                    It is my responsibility to take care of the right balance in our growth. I like to work with my team to ensure that we are in control, but also working in a bold way to achieve the longer-term goals for Creative Group. 
+                                    The (growth) ambition and the potential of Creative Group is enormous, which is what I love about this company the most! Creative Group is constantly in motion. This brings out financial, fiscal, legal and other challenges. I find myself stimulated on every subject. 
+                                </p>
+                                <p>
+                                    We openly ‘Love Change’. Change can be exciting and bring many opportunities such as big challenges, new collaborations, which all stimulate personal growth. By embracing change, I have managed to achieve rapid personal development, and that makes me proud and grateful for what I’m doing now. 
+                                    Finally I would like to mention that big changes in life are inevitable as I've experienced myself - they aren't always positive! But finding a way to be positive even about bad changes is a great way to find strength and purpose. 
+                                    Life at Creative Group is a roller coaster, and I really enjoy the ride!
+                                </p>
+                            </div>
+                        </slide>
+                        <hooper-navigation slot="hooper-addons"></hooper-navigation>
+                        <hooper-pagination slot="hooper-addons"></hooper-pagination>
+                    </hooper>
+                </div>
             </div>
         </section>
     </div>
@@ -315,5 +326,8 @@
     border-radius: 50%
     width: 180px
     margin: 50px 40px 40px 40px
+
+.communities__col
+    max-width: 280px
 
 </style>

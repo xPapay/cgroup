@@ -143,4 +143,15 @@
 
 .lightbox
     z-index: 999 !important
+
+.hooper,
+.hooper-next,
+.hooper-prev
+    outline: none
+
+.hooper-indicator
+    width: 15px !important
+    height: 15px !important
+    border-radius: 50% !important
+    outline: none
 </style>
