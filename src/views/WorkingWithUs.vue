@@ -29,6 +29,79 @@
                 <h2 class="section__headline">
                     Tomorrow is exciting. Join the adventure.Only a few tickets left
                 </h2>
+                <fluid-grid>
+                    <template v-slot:col-1>
+                        <div>
+                            <img :src="require('../assets/01.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/05.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/08.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/11.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/14-1024x1000.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/17.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/18.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/21.jpg')">
+                        </div>
+                    </template>
+
+                    <template v-slot:col-2>
+                        <div>
+                            <img :src="require('../assets/02-1024x817.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/04.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/07.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/09.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/12-1024x595.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/15-683x1024.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/20.jpg')">
+                        </div>
+                    </template>
+                    <template v-slot:col-3>
+                        <div>
+                            <img :src="require('../assets/03-759x1024.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/06.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/10.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/13.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/16.jpg')">
+                        </div>
+                        <div>
+                            <img :src="require('../assets/19.jpg')">
+                        </div>
+                        
+                    </template>
+                </fluid-grid>
             </div>
         </section>
         <section class="section values">
@@ -202,6 +275,7 @@
         Navigation as HooperNavigation,
         Pagination as HooperPagination
     } from 'hooper'
+    import FluidGrid from '../components/FluidGrid.vue'
 
     export default {
         components: {
@@ -210,7 +284,8 @@
             Hooper,
             Slide,
             HooperNavigation,
-            HooperPagination
+            HooperPagination,
+            FluidGrid
         }
     }
 </script>
