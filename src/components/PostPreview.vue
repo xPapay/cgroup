@@ -1,6 +1,6 @@
 <template>
     <article class="post-preview">
-        <div class="post-preview__thumbnail" :style="{backgroundImage: `url(${post.thumbnail})`}"></div>
+        <div class="post-preview__thumbnail" :style="{backgroundImage: `url(${post.thumbnail.url})`}"></div>
         <div class="post-preview__body">
             <header class="post-preview__header">
                 <h2 class="post-preview__title" v-text="post.title"></h2>
@@ -24,8 +24,10 @@
                     required: true
                 },
                 thumbnail: {
-                    type: String,
-                    default: require('../assets/images/01.jpg')
+                    url: {
+                        type: String,
+                        default: require('../assets/images/01.jpg')
+                    }
                 },
                 timestamp: {
                     type: String,

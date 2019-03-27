@@ -3,11 +3,10 @@
         <the-navigation class="navigation--attached"/>
         <div class="content">
             <article class="post">
-                <header class="post__header" :style="{backgroundImage: `url(${currentPost.thumbnail})`}"></header>
+                <header class="post__header" :style="{backgroundImage: thumbnail}"></header>
                 <div class="post__body">
-                    <h1 class="post__headline" v-text="currentPost.title"></h1>
-                    <!-- TODO: DO NOT ESCAPE HTML STRINGS, IT CAN BE BUILT IN PAGE BUILDER -->
-                    <div class="post__content" v-text="currentPost.body"></div>
+                    <h1 class="post__headline" v-text="title"></h1>
+                    <div class="post__content" v-html="body"></div>
                 </div>
             </article>
         </div>
@@ -17,6 +16,8 @@
 <script>
     import TheNavigation from '../components/TheNavigation.vue';
     import { mapState } from 'vuex';
+    const marked = require('marked')
+
     export default {
         components: {
             TheNavigation
@@ -27,7 +28,24 @@
                 required: true
             }
         },
-        computed: mapState(['currentPost']),
+        computed: {
+            ...mapState(['currentPost']),
+            body() {
+                return this.currentPost
+                    ? marked(this.currentPost.body)
+                    : ''
+            },
+            thumbnail() {
+                return this.currentPost 
+                    ? `url(${this.currentPost.thumbnail.url})`
+                    : 'none'
+            },
+            title() {
+                return this.currentPost
+                    ? this.currentPost.title
+                    : ''
+            }
+        },
         serverPrefetch() {
             return this.$store.dispatch('fetchPostById', this.id)
         },
@@ -39,7 +57,7 @@
     }
 </script>
 
-<style scoped lang="sass">
+<style lang="sass">
 .post
     margin-top: 8rem
     margin-bottom: 8rem
@@ -58,5 +76,13 @@
 
 .post__body
     padding: 1rem
+
+.post__content
+    img
+        max-width: 100%
+
+    p
+        line-height: 1.75
+        color: #333
 
 </style>

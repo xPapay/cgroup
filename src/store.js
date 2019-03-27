@@ -17,7 +17,7 @@ export const createStore = () => {
         actions: {
             fetchPosts({ commit }) {
                 return PostFetching.getPosts()
-                    .then(({ data: posts }) => commit('SET_POSTS', posts))
+                    .then(posts => commit('SET_POSTS', posts))
                     .catch(err => console.log(err))
             },
             fetchPostById({ commit, getters }, id) {
@@ -26,7 +26,7 @@ export const createStore = () => {
                     return commit('SET_CURRENT_POST', post)
                 }
                 return PostFetching.getPostById(id)
-                    .then(({ data: post }) => commit('SET_CURRENT_POST', post))
+                    .then(post => commit('SET_CURRENT_POST', post))
             }
         },
         getters: {
