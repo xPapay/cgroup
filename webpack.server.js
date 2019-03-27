@@ -15,7 +15,6 @@ const config = {
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env.VUE_ENV': '"server"'
-			// it should set automatically NODE_ENV to development/production thanks to mode
 		}),
 		new VueSSRServerPlugin()
 	]

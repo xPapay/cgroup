@@ -14,7 +14,7 @@ const config = {
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		filename: '[name].[hash].js',
-		publicPath: '/dist/' // it says how to resolve path in script tags e.g/ /dist/my-bundle.js
+		publicPath: '/dist/'
 	},
 	module: {
 		rules: [

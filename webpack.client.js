@@ -1,4 +1,3 @@
-// webpack.client.js
 const commonConfig = require('./webpack.common.js')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
