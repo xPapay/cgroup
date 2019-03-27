@@ -2,7 +2,6 @@
     <div>
         <the-header 
             headline="Tomorrow Is Exciting"
-            subheadline="A subheadline"
             :background="require('../assets/images/Home_Header_CG-02-1920x1045.jpg')"
         >
             <the-navigation />

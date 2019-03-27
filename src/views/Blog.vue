@@ -1,6 +1,6 @@
 <template>
     <div>
-        <the-header :background="require('../assets/images/Collage_31.jpg')">
+        <the-header :background="require('../assets/images/blog-cover.jpg')">
             <the-navigation />
         </the-header>
         <section class="section">

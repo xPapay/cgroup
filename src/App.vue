@@ -20,7 +20,9 @@
 </script>
 
 <style lang="sass">
-// there should be only layout styling, e.g. how high-level components lay together
+img 
+    filter: blur(5px)
+
 .content
     max-width: 1140px
     margin: 0 auto
