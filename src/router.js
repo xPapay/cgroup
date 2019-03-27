@@ -8,6 +8,8 @@ import ManagementTeam from './views/ManagementTeam.vue'
 import WorkingWithUs from './views/WorkingWithUs'
 import OurTech from './views/OurTech.vue';
 import Contact from './views/Contact'
+import Blog from './views/Blog'
+import Post from './views/Post'
 
 Vue.use(Router)
 
@@ -51,6 +53,17 @@ export const routes = [
         name: 'contact',
         path: '/contact',
         component: Contact
+    },
+    {
+        name: 'blog',
+        path: '/blog',
+        component: Blog
+    },
+    {
+        name: 'post-show',
+        path: '/blog/:title/:id',
+        component: Post,
+        props: true
     }
 ]
 

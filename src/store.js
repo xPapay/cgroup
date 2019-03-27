@@ -1,27 +1,36 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import PostFetching from './services/PostFetching'
 
 Vue.use(Vuex)
 
 export const createStore = () => {
     return new Vuex.Store({
         state: {
-            headline: '',
-            somethingElse: 'is something else'
+            posts: [],
+            currentPost: null
         },
         mutations: {
-            SET_HEADLINE: (state, headline) => state.headline = headline
+            SET_POSTS: (state, posts) => state.posts = posts,
+            SET_CURRENT_POST: (state, currentPost) => state.currentPost = currentPost
         },
         actions: {
-            fetchHeadline({ commit }) {
-                return new Promise(resolve => {
-                    setTimeout(() => resolve('Fetched Headline'), 1500)
-                }).then(headline => commit('SET_HEADLINE', headline))
+            fetchPosts({ commit }) {
+                return PostFetching.getPosts()
+                    .then(({ data: posts }) => commit('SET_POSTS', posts))
+                    .catch(err => console.log(err))
             },
-            setHeadline( { commit }, headline) {
-                console.log(headline)
-                commit('SET_HEADLINE', headline)
+            fetchPostById({ commit, getters }, id) {
+                const post = getters.getPostById(id)
+                if (post) {
+                    return commit('SET_CURRENT_POST', post)
+                }
+                return PostFetching.getPostById(id)
+                    .then(({ data: post }) => commit('SET_CURRENT_POST', post))
             }
+        },
+        getters: {
+            getPostById: state => id => state.posts.find(post => post.id === id)
         }
     })
 }

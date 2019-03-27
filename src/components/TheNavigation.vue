@@ -24,6 +24,7 @@
                 <li class="menu__item"><router-link :to="{name: 'working-with-us'}">Working With Us</router-link></li>
                 <li class="menu__item"><router-link :to="{name: 'our-tech'}">Our Tech</router-link></li>
                 <li class="menu__item"><router-link :to="{name: 'contact'}">Contact</router-link></li>
+                <li class="menu__item"><router-link :to="{name: 'blog'}">Blog</router-link></li>
             </ul>
             <div class="page-overlay" v-if="mobileMenuOpen"></div>
         </div>

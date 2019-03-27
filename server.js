@@ -117,6 +117,7 @@ function render(req, res) {
 }
 
 app.use('/dist', express.static('dist'))
+app.use('/public', express.static('public'))
 
 app.get('*', isProd ? render : (req, res) => {
     readyPromise.then(() => render(req, res))
