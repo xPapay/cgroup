@@ -62,7 +62,7 @@ img
 .col
     flex-basis: 40%
     flex-grow: 1
-    min-width: 320px
+    min-width: 280px
 
     & > img
         max-width: 100%
@@ -113,6 +113,10 @@ img
     &--no-resize > *
         flex: 0
 
+.col-3
+    flex-basis: 30%
+    flex: 1
+
 .button
     cursor: pointer
     border: none
@@ -134,6 +138,9 @@ img
 
     &:hover
         background: #0092bf
+
+.min-w-180
+    min-width: 180px
 
 .separator
     width: 100%

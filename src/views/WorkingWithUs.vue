@@ -333,4 +333,8 @@
 .communities__col
     max-width: 280px
 
+@media screen and (max-width: 400px)
+    .testimonial__avatar
+        float: none
+
 </style>

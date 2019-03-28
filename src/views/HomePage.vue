@@ -120,6 +120,9 @@
     font-size: 1.25rem
     margin-bottom: 40px
 
+.awards__list > img
+    max-width: 100%
+
 .partner-logo
     max-width: 150px
     margin: 10px
@@ -137,4 +140,5 @@
     flex-basis: 40%
     flex-grow: 1
     margin: 10px
+    min-width: 180px
 </style>

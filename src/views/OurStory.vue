@@ -21,11 +21,10 @@
                 </div>
                 <div class="row row--narrow">
                     <ul class="col flex-grid flex-grid--no-resize our-story-gallery">
-                        <li v-for="image in images" :key="image.name">
+                        <li v-for="image in images" :key="image.name" class="our-story-gallery__item">
                             <img 
                                 :src="image.name" 
                                 :alt="image.alt"
-                                class="our-story-gallery__item"
                                 @click="showLightbox(image.name)" 
                             >
                         </li>
@@ -132,8 +131,14 @@
     justify-content: space-between
 
 .our-story-gallery__item
-    max-width: 180px
     cursor: pointer
+    flex-basis: 22%
+    min-width: 150px
+    flex-grow: 1
+    margin: 10px
+
+    img
+        max-width: 100%
 
 .feature-card
     text-align: center

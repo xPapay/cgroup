@@ -6,7 +6,7 @@
         <section class="section">
             <div class="content">
                 <div class="awards">
-                    <div class="flex-grid flex-grid--no-resize">
+                    <div class="awards__list flex-grid flex-grid--no-resize">
                         <img src="../assets/images/Deloitte-logo.jpg" alt="FDGazellen logo">
                     </div>
                 </div>
@@ -126,4 +126,7 @@
     flex-basis: 30%
     flex-grow: 1
     margin: 1.5rem 10px
+
+.awards__list img
+    max-width: 100%
 </style>

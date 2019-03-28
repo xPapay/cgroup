@@ -70,7 +70,7 @@
 
 .col-contact-form
     flex-basis: 30%
-    margin-left: 2rem
+    margin-left: 1rem
 
 .contact-info > *
     margin-bottom: 1rem

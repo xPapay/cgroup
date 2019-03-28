@@ -60,17 +60,17 @@
             }">
             <div class="content">
                 <h2 class="color-light light-font text-center">Rapido is a certified platform for iTunes, Google Play, Sony PSN, Xbox, Netflix, Spotify and many other leading brands in entertainment, telecom, gaming and the prepaid credit industry.</h2>
-                <div class="flex color-light">
-                    <p class="higher-lines margin-s">
+                <div class="flex-grid color-light">
+                    <p class="higher-lines margin-s min-w-180 col-3">
                         We offer our customers and partners a powerful and responsive technology. 
                         Our partners trust us to provide great online distribution; 
                         offering regional flexibility and personalised promotions to the end user.
                     </p>
-                    <p class="higher-lines margin-s">
+                    <p class="higher-lines margin-s min-w-180 col-3">
                         Through Rapido, multiple international brands access high-reach media 
                         channels for introductions of new products and boosting special promotions.
                     </p>
-                    <p class="higher-lines margin-s">
+                    <p class="higher-lines margin-s min-w-180 col-3">
                         In many countries, Rapido is the preferred brand for ongoing top-up purchases 
                         by consumers. Customers love us for our large product assortment, 
                         instant delivery and great seasonal promotions.

@@ -74,9 +74,11 @@
     z-index: 800
     padding: 10px 15px
     transition: all 0.8s
+    // width: 100%
 
 .navigation__logo
     z-index: 999
+    // flex-shrink: 1
 
 .navigation--attached
     background: white
