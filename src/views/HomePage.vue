@@ -104,6 +104,9 @@
             title() {
                 return 'Creative Group'
             }
+        },
+        metaInfo: {
+            title: 'Home'
         }
     }
 </script>

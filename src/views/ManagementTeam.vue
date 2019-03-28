@@ -82,6 +82,9 @@
             TheHeader,
             TheNavigation,
             CtaCard
+        },
+        metaInfo: {
+            title: 'Management Team'
         }
     }
 </script>

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Meta from 'vue-meta'
 import HomePage from './views/HomePage.vue'
 import OurStory from './views/OurStory.vue'
 import Rapido from './views/Rapido'
@@ -12,6 +13,7 @@ import Blog from './views/Blog'
 import Post from './views/Post'
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export const routes = [
     {

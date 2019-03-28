@@ -98,6 +98,9 @@
             TheNavigation,
             TheHeader,
             CtaCard
+        },
+        metaInfo: {
+            title: 'Recharge'
         }
     }
 </script>

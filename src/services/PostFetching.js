@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://localhost:1337'
+const baseURL = 'http://cg-cms.lukaspapay.com'
 
 const client = axios.create({
     baseURL,   // TODO: extract to env variable

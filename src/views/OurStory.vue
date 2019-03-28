@@ -120,6 +120,9 @@
             showLightbox(imageName) {
                 this.$refs.lightbox.show(imageName)
             }
+        },
+        metaInfo: {
+            title: 'Our Story'
         }
     }
 </script>

@@ -40,6 +40,9 @@
             TheNavigation,
             TheHeader,
             ContactForm
+        },
+        metaInfo: {
+            title: 'Contact'
         }
     }
 </script>

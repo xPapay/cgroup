@@ -103,6 +103,9 @@
             TheHeader,
             TheNavigation,
             CtaCard
+        },
+        metaInfo: {
+            title: 'Rapido'
         }
     }
 </script>

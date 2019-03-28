@@ -54,6 +54,9 @@
                     params: { id, title: slugify(title, { lower: true })}
                 }
             }
+        },
+        metaInfo: {
+            title: 'Blog'
         }
     }
 </script>

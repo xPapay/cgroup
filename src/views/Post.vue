@@ -53,6 +53,11 @@
             if (!this.currentPost || this.currentPost.id !== this.id) {
                 return this.$store.dispatch('fetchPostById', this.id)
             }
+        },
+        metaInfo() {
+            return {
+                title: this.title
+            }
         }
     }
 </script>

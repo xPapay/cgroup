@@ -297,6 +297,9 @@
             HooperNavigation,
             HooperPagination,
             FluidGrid
+        },
+        metaInfo: {
+            title: 'Working With Us'
         }
     }
 </script>

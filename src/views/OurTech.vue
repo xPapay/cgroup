@@ -137,6 +137,9 @@
         components: {
             TheNavigation,
             TheHeader
+        },
+        metaInfo: {
+            title: 'Our Tech'
         }
     }
 </script>

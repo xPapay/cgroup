@@ -15,6 +15,10 @@
         components: {
             TheFooter,
             TheNavigation
+        },
+        metaInfo: {
+            title: '',
+            titleTemplate: '%s | Creative Group'
         }
     }
 </script>

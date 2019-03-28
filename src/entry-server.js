@@ -12,6 +12,7 @@ export default context => {
             // serverPrefetch lifecycle hook should be called
             context.rendered = () => {
                 context.state = store.state
+                context.meta = app.$meta()
             }
 
             resolve(app)
