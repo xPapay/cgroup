@@ -4,7 +4,7 @@ const path = require('path')
 const fs = require('fs')
 const webpack = require('webpack')
 const { createBundleRenderer } = require('vue-server-renderer')
-const templatePath = path.resolve(__dirname, './public/template.html')
+const templatePath = path.resolve(__dirname, './src/template.html')
 let template = fs.readFileSync(templatePath, 'utf-8')
 
 const isProd = process.env.NODE_ENV === 'production'

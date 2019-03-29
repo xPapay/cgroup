@@ -17,7 +17,7 @@ const config = {
     mode: 'production',
     plugins: [
         new HTMLWebpackPlugin({
-            template: path.join(__dirname, 'public', 'prerender-template.html')
+            template: path.join(__dirname, 'src', 'prerender-template.html')
         }),
         new PrerenderSPAPlugin({
             staticDir: path.join(__dirname, 'prerendered'),
