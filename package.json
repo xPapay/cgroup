@@ -9,7 +9,7 @@
     "build:server": "webpack --config webpack.server.js --mode=production",
     "start": "npm run build && cross-env NODE_ENV=production node server",
     "dev": "node server",
-    "prerender": "rimraf dist && cross-env --env.NODE_ENV=production webpack --config webpack.prerender.js --mode=production"
+    "prerender": "rimraf prerendered && cross-env --env.NODE_ENV=production webpack --config webpack.prerender.js --mode=production"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
+    "@prerenderer/renderer-jsdom": "^0.2.0",
     "babel-loader": "^8.0.5",
     "chokidar": "^2.1.5",
     "cross-env": "^5.2.0",
