@@ -19,7 +19,7 @@ const config = {
         }),
         new PrerenderSPAPlugin({
             staticDir: path.join(__dirname, 'dist'),
-            routes: ['/', '/our-story'],
+            routes: ['/', '/management-team'],
             renderer: new Renderer({
                 renderAfterDocumentEvent: 'render-event'
             })
